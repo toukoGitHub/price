@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=open+sans:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+ /*Tiktok code the word */
+ .body {
+    font-family: 'Open Sans', sans-serif;
+ }
+ * {
+    padding: 0;
+    margin: 0;
+ }
+
+ .pricing-table {
+    display: flex;
+    color: #fff;
+    font-family: "open sans",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+ }
+
+ .card {
+    width: 220px;
+    height: 370px;
+    box-shadow: 2px 2px 46px -4px #00000099;
+    padding: 30px;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .type {
+    margin-top: 30px;
+    letter-spacing: 0.1rem;
+    font: inherit;
+ }
+
+ .price {
+    font-size: 7.5rem;
+    position: relative;
+    margin: 10px, 0px, 20px;
+    z-index: 2;
+ }
+
+ .price::before {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.06);
+    font-size: 9.5rem;
+    z-index: -1;
+    right: -30%;
+    bottom: 15%;
+    text-shadow: 0 0 0px rgba(51, 55, 69, 0);
+    transition: all 1s ease-in-out;
+ }
+
+ .price span {
+    font-size: 1.8rem;
+    position: absolute;
+    left: -15%;
+    top: 65%;
+ }
+
+ .card:nth-child(1) {
+    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+ }
+
+ .card:nth-child(1).price::before {
+    content: "$20";
+ }
+
+ .card:nth-child(2) {
+    margin: 0 30px;
+    width: 250px;
+    height: 400px;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+ }
+
+ .card:nth-child(2) .price::before {
+    content: "$50";
+ }
+
+ .card:nth-child(3) {
+    background: #00b09b;
+    background: linear-gradient(to right, #96c93d, #00b09b);
+ }
+
+ .card:nth-child(3).price::before {
+    content: "$100";
+ }
+
+ .card:nth-child(1).price,
+ .card:nth-child(3).price {
+    font-size: 6rem;
+ }
+
+ .plan {
+    font-size: 1.3rem;
+    position: relative;
+    margin-bottom: 10px;
+ }
+
